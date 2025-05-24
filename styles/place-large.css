@@ -1,0 +1,24 @@
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+picture {
+  grid-column: 1 / -1;
+}
+
+.data-card, .weather-card {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: relative;
+}
+
+.mobile-icon {
+  display: none;
+}
+
+.desktop-icon::after {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/place-lg.jpeg" media="(min-width: 768px)" />
+            <img src="images/place-sm.jpeg" alt="the super eagle" />
+        </picture>
+        <section class="data-card">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Population:</strong> 237,527,782</li>
+                <li><strong>Area:</strong> 923,768 sq.km</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Capital:</strong> FCT Abuja</li>
+                <li><strong>Time Zone:</strong> GMT+3</li>
+                <li><strong>Currency:</strong> Naira ₦</li>
+                <li><strong>Internet TLD:</strong> .ng</li>
+                <li><strong>Calling Code:</strong> +234</li>
+            </ul>
+        </section>
+        <section class="weather-card">
+            <h2>Weather <span class="desktop-icon" aria-hidden="true"></span></h2>
+            <img class="mobile-icon" src="images/cloudy.png" alt="cloud icon" />
+            <ul>
+                <li><strong>Temperature:</strong> 24 °C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 11 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> 🌴Stephen Bassey Edim.| Nigeria🌴</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
