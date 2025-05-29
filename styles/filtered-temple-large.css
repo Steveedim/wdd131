@@ -1,0 +1,41 @@
+/* Large screen styles (min-width: 900px) */
+@media screen and (min-width: 900px) {
+  
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  nav button {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  #temple-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .temple-card {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .temple-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .temple-card p {
+    font-size: 1rem;
+  }
+
+  .temple-card img {
+    max-height: 200px;
+    object-fit: cover

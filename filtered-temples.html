@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A collection of beautiful temples from around the world.">
+    <meta name="keywords" content="temples, architecture, religion, spirituality">
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temple-large.css" media="(min-width: 800px)">
+    <script src="scripts/filtered-temple.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav>
+          <button id="home">Home</button>
+          <button id="old">Old</button>
+          <button id="new">New</button>
+          <button id="large">Large</button>
+          <button id="small">Small</button>
+        </nav>
+    </header>
+    <main>
+       <div id="temple-cards">
+      <!-- JavaScript will inject temple cards here -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span>🌺Stephen Bassey Edim🌺</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="filtered-temples.js"></script>
+</body>
+</html>

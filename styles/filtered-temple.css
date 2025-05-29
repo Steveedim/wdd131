@@ -1,0 +1,86 @@
+/* Basic Reset and Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Navigation Buttons */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+nav button {
+  padding: 0.5rem 1rem;
+  background-color: #00467f;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #006ab6;
+}
+
+/* Temple Cards Grid */
+#temple-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Individual Card Styling */
+.temple-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.temple-card:hover {
+  transform: translateY(-5px);
+}
+
+.temple-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  color: #003366;
+}
+
+.temple-card p {
+  margin-bottom: 0.25rem;
+  font-size: 0.95rem;
+}
+
+/* Temple Image Styling */
+.temple-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
