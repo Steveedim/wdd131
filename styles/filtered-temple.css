@@ -29,11 +29,18 @@ nav button {
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+/* Hover effect */
 nav button:hover {
   background-color: #006ab6;
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+nav button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 102, 182, 0.5);
 }
 
 /* Temple Cards Grid */
