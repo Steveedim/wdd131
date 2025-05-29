@@ -34,7 +34,7 @@ nav button {
 
 /* Hover effect */
 nav button:hover {
-  background-color: #006ab6;
+  background-color: red;
   transform: scale(1.05); /* Slight zoom on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
