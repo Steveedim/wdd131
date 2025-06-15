@@ -1,0 +1,203 @@
+:root {
+  --primary-color: #375E97;
+  --accent-color: #FB6542;
+  --bg-color: #ffffff;
+  --text-color: #222;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  display: block;
+  cursor: pointer;
+}
+
+#main-nav {
+  list-style: none;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#main-nav li {
+  margin: 0.5rem 0;
+}
+
+#main-nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+#hero {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/a/aa/Fingers_Park_Calabar.jpg') no-repeat center center/cover;
+  padding: 4rem 1rem;
+  color: white;
+  text-align: center;
+  height: 30vh;
+}
+
+.content-section {
+  padding: 2rem 1rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  loading: lazy;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.grid-section {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  margin: 1rem 0;
+}
+
+.grid-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.item {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* Hover effects for nav links */
+/* Hover + Focus Zoom Effect for Navigation Links */
+#main-nav li a:hover,
+#main-nav li a:focus {
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  transform: scale(1.09);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Hover + Focus Zoom Effect for Submit Button */
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background-color: var(--accent-color);
+  transform: scale(1.09);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.main-image img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.grids-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.grids-image img {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.description p {
+  font-size: 1rem;
+  color: #555;
+}
